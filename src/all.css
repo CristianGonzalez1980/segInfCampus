@@ -15873,7 +15873,7 @@
    }
    .custom-range {
     width:100%;
-    height:calc(1rem + none * 2);
+    height:calc(1rem + 1 * 2);
     padding:0;
     background-color:transparent;
     -webkit-appearance:none;
