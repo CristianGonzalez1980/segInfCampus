@@ -65,7 +65,7 @@ funcionando mientras navega el sitio. Cuando sale de la plataforma o cierra su n
 Si desea mayor seguridad no utilice esta opción: sólo tendrá que escribir su nombre manualmente cada vez que quiera iniciar sesión.&lt;/p&gt;
 &lt;/div&gt; "
                             data-html="true" tabindex="0" data-trigger="focus">
-                            <i class="icon fa fa-question-circle text-info fa-fw " title="Ayuda con Las &#039;Cookies&#039; deben estar habilitadas en su navegador" aria-label="Ayuda con Las &#039;Cookies&#039; deben estar habilitadas en su navegador"></i>
+                            <i className="icon fa fa-question-circle text-info fa-fw " title="Ayuda con Las &#039;Cookies&#039; deben estar habilitadas en su navegador" aria-label="Ayuda con Las &#039;Cookies&#039; deben estar habilitadas en su navegador"></i>
                           </a>
                         </div>
 
