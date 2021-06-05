@@ -9,11 +9,7 @@ const app = express();
 
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
-
 app.use(express.json());
-/* app.get('/users', function (req, res) {
-  return res.json({ message: 'pong' });
-}); */
 
 app.post('/users', async (req, res) => {
   console.log(req.boy);
