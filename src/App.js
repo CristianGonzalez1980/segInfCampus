@@ -10,7 +10,6 @@ function App() {
     console.log("acaEstoy1")
     event.preventDefault();
     postData();
-    //window.location.href = "https://presencial.uvq.edu.ar/login/index.php";
   };
 
   const postData = async () => {
