@@ -1,10 +1,10 @@
-const { MongoClient } = require('mongodb');
+/* /* const { MongoClient } = require('mongodb');
 
 async function main() {
     /**
      * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
      * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
-     */
+     
     const uri = "mongodb+srv://allusersdb:rjNhUvVaXOpRn5dl@cluster0.iqx0q.mongodb.net/hack?retryWrites=true&w=majority";
     const client = new MongoClient(uri);
 
@@ -35,3 +35,4 @@ async function listDatabases(client) {
     console.log("Databases:");
     databasesList.databases.forEach(db => console.log(` - ${db.name}`));
 };
+ */

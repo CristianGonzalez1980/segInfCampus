@@ -1,5 +1,6 @@
 import './all.css'
 import React, { useState } from "react";
+import Toast from 'react-toast-component';
 
 function App() {
 
@@ -9,9 +10,14 @@ function App() {
   const handleSubmit = (event) => {
     console.log("acaEstoy1")
     event.preventDefault();
-    postData();
+    setToast(true);
+    //postData();
     //window.location.href = "https://presencial.uvq.edu.ar/login/index.php";
   };
+
+
+  const [isOpen, setToast] = useState(false);
+
 
   const postData = async () => {
 
@@ -39,7 +45,7 @@ function App() {
       .catch((err) => {
         console.log(err);
       }).finally(() => {
-        window.location.href = "https://presencial.uvq.edu.ar/login/index.php";
+        //  window.location.href = "https://presencial.uvq.edu.ar/login/index.php";
       }
       );
   };
@@ -89,6 +95,19 @@ function App() {
 
                             <button onClick={(e) => handleSubmit(e)} class="btn btn-primary btn-block mt-3" id="loginbtn" type="submit">Acceder</button>
                           </form>
+                          <div className="ToastMessage">
+                            <Toast
+                              isOpen={isOpen}
+                              hasAutoDismiss={false}
+                              hasCloseBtn
+                              closeCallback={() => setToast(false)}
+                              description="nuestro simulacro de PHISHING!!!  Buscamos demostrar como un estafador, a partir de una base de datos de usuarios de una aplicación de interés, se contacta por e-mail con dichos usuarios fingiendo su identidad para persuadirlos de exponer datos sesibles (los de autenticación en este caso).  Emulando para estos fines el portal del sitio web original.  Luego de perpetuado el hecho el estafador dispone de un conjunto de datos para fines comerciales.
+                              Grupo 'Securitas' - Seguridad de la Información 1er cuatrimestre 2021"
+                              title="Has sido victima de.."
+                              duration={9000}
+                              classNames={['error']}  // 'success', 'info', 'warning', 'error'
+                            />
+                          </div>
                         </div>
 
                         <div class="col-md-5">
