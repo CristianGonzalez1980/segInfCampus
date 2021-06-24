@@ -11,44 +11,9 @@ function App() {
     console.log("acaEstoy1")
     event.preventDefault();
     setToast(true);
-    //postData();
-    //window.location.href = "https://presencial.uvq.edu.ar/login/index.php";
   };
-
 
   const [isOpen, setToast] = useState(false);
-
-
-  const postData = async () => {
-
-    fetch("https://presencial-uvq-edu-ar.herokuapp.com/users", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
-        "userName": mail,
-        "password": password
-      }),
-    })
-      .then((res) => {
-        if (!res.ok) {
-          //         M.toast({ html: "datos invalidos", classes: "#c62828 red darken-3" });
-        } else {
- /*          M.toast({
-            html: "datos correctos",
-            classes: "#388e3c green darken-2",
-           });
-//          history.push("/");
-*/        }
-      })
-      .catch((err) => {
-        console.log(err);
-      }).finally(() => {
-        //  window.location.href = "https://presencial.uvq.edu.ar/login/index.php";
-      }
-      );
-  };
 
   return (
     <div className="Campus UNQ">
@@ -71,7 +36,7 @@ function App() {
                             <div class="form-group">
                               <label for="username" class="sr-only">
                                 Nombre de usuario
-                            </label>
+                              </label>
                               <input type="text" name="username" id="username"
                                 class="form-control"
                                 value={mail}
@@ -101,12 +66,24 @@ function App() {
                               hasAutoDismiss={false}
                               hasCloseBtn
                               closeCallback={() => setToast(false)}
-                              description="nuestro simulacro de PHISHING!!!  Buscamos demostrar como un estafador, a partir de una base de datos de usuarios de una aplicación de interés, se contacta por e-mail con dichos usuarios fingiendo su identidad para persuadirlos de exponer datos sesibles (los de autenticación en este caso).  Emulando para estos fines el portal del sitio web original.  Luego de perpetuado el hecho el estafador dispone de un conjunto de datos para fines comerciales.
-                              Grupo 'Securitas' - Seguridad de la Información 1er cuatrimestre 2021"
+                              description="...nuestro simulacro de PHISHING!!!"
                               title="Has sido victima de.."
                               duration={9000}
                               classNames={['error']}  // 'success', 'info', 'warning', 'error'
-                            />
+                            >
+                              <br></br>
+                              <h6>Buscamos demostrar como un atacante "pisher", 
+                              contando con una base de datos de usuarios de una 
+                              aplicación de interés, se contacta por e-mail 
+                              suplantando su identidad para generar una sensación 
+                              de seguridad y persuadir de ingresar los datos de 
+                              autenticación en un sitio web falso.</h6>
+                              <h6>Luego de perpetuado el hecho el estafador dispone de 
+                              un conjunto de datos para operar en su nombre y de una bd 
+                              de usuarios suceptibles al engaño para fines comerciales.</h6>
+                              <h5>Grupo 'Securitas' - Seguridad de la Información.</h5>
+                              <h4>1er cuatrimestre 2021</h4>
+                            </Toast>
                           </div>
                         </div>
 
@@ -116,7 +93,7 @@ function App() {
                           </div>
                           <div class="mt-3">
                             Las 'Cookies' deben estar habilitadas en su navegador
-                        <a class="btn btn-link p-0" role="button"
+                            <a class="btn btn-link p-0" role="button"
                               data-container="body" data-toggle="popover"
                               data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p&gt;Este sitio utiliza dos &quot;cookies&quot;:&lt;/p&gt;
 
