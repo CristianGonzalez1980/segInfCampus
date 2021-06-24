@@ -10,6 +10,7 @@ _A continuacion la URL del sitio deployado y una captura de imagen del sitio web
 
 ![Screenshot](screenshot.png)
 <img src="reactlogo.png" width="100" height="90">
+<img src="expressjslogo.png" width="250" height="90">
 <img src="herokulogo.png" width="300" height="90">
 
 _Los datos de autenticacion capturados se almacenan en la nube._
