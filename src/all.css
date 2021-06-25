@@ -12266,9 +12266,11 @@
     line-height:1.5;
     color:#4f4e50;
     text-align:left;
-    background-color:#fff
+    background-color:#fff;
+    height:100%;
+    min-height:100%
    }
-   @media (max-width:1200px) {
+   @media (max-width:1300px) {
     body {
      font-size:calc(.90375rem + .045vw)
     }
@@ -31779,7 +31781,7 @@
    body {
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
-    padding-bottom: 11.5rem;
+    padding-bottom: 7.5rem;
    }
    .navbar {
     -webkit-box-shadow:0 2px 4px rgba(0,0,0,.08);
