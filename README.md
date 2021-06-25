@@ -47,6 +47,11 @@ _Para enviar el correo suplantando la identidad del sender utilizamos un servici
 
 
 
+##
+### Documentación :pencil:
+
+https://docs.google.com/document/d/12x6KOGDfOfGgMjSoYMV0Kt2B8NB7uK5V7vDnEyMpMZc/edit
+
 
 ##
 ### Autores :trollface:
